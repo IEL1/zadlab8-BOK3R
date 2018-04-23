@@ -2,22 +2,9 @@ package pl.edu.ur.oopl8;
 
 public abstract class Product {
 
-    public String name;
-    public double price;
-    public String describe;
-
-    public Product(String name, String describe) {
-        this.name = name;
-        this.describe = describe;
-    }
-
-    public Product(double price, String name) {
-        this.price = price;
-        this.name = name;
-    }
-
-    public Product() {
-    }
+    private double price;
+    private String name;
+    private String describe;
 
     public Product(double price, String name, String describe) {
         this.price = price;
@@ -27,6 +14,14 @@ public abstract class Product {
 
     public double getPrice() {
         return price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescribe() {
+        return describe;
     }
 
     public void setPrice(double price) {

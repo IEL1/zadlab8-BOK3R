@@ -2,8 +2,8 @@ package pl.edu.ur.oopl8;
 
 public class Tractor extends Product {
 
-    public Tractor(String name, double price, String describe) {
-        super(name, price, describe);
+    public Tractor(double price, String name, String describe) {
+        super(price, name, describe);
     }
 
     @Override
